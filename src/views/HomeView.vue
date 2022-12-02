@@ -1,6 +1,11 @@
 <script setup>
 import axios from 'axios';
 import MessageCard from '@/components/MessageCard.vue';
+import ArtworkCard from '@/components/ArtworkCard.vue';
+import muralImg from '@/assets/20221202.jpg';
+import art01 from '@/assets/fanart/01.png';
+import art02 from '@/assets/fanart/02.png';
+import art03 from '@/assets/fanart/03.jpg';
 </script>
 
 <template>
@@ -14,8 +19,21 @@ import MessageCard from '@/components/MessageCard.vue';
       <v-row no-gutters class="mb-8">
         <v-col sm="10" offset-sm="1">
           <div class="section-body mural-container">
-            <img src="https://mumei500k.fromyour.fans/img/mural1.b34eb720.png" class="mural-img">
-            <!-- <img src="@/assets/banner.png" class="mural-img"> -->
+            <img :src="muralImg" class="mural-img">
+          </div>
+        </v-col>
+      </v-row>
+
+      <!-- GALLERY -->
+      <v-row no-gutters class="mt-8 mb-4">
+        <v-col>
+          <div class="section-header">GALLERY</div>
+        </v-col>
+      </v-row>
+      <v-row no-gutters>
+        <v-col>
+          <div class="section-body arts-container">
+            <ArtworkCard v-for="(info, ix) in arts" :key="`art-${ix}`" :info="info" />
           </div>
         </v-col>
       </v-row>
@@ -40,8 +58,13 @@ import MessageCard from '@/components/MessageCard.vue';
 export default {
   data() {
     return {
-      source: 'https://vtubertools.sfo3.digitaloceanspaces.com/tribute/mumei500k.json',
+      source: 'https://vtubertools.sfo3.digitaloceanspaces.com/tribute/mumei2023.json',
       cards: [],
+      arts: [
+        { file: art01, artist: 'ArtistName1' },
+        { file: art02, artist: 'ArtistName2' },
+        { file: art03, artist: 'ArtistName3' },
+      ],
     }
   },
   mounted() {
@@ -78,6 +101,10 @@ export default {
       }
     }
     &.cards-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &.arts-container {
       display: flex;
       flex-wrap: wrap;
     }

@@ -36,7 +36,7 @@ import { RouterView } from 'vue-router'
 }
 .content {
   min-height:calc(100vh - 360px);
-  background:linear-gradient(to bottom, #288485 0%, #155455 100%);
+  background:linear-gradient(to bottom, #288485 0%, #124a4b 400px, #288485 100%);
   padding:30px 10px 10px 10px;
 }
 </style>
