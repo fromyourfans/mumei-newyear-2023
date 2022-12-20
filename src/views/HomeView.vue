@@ -2,10 +2,16 @@
 import axios from 'axios';
 import MessageCard from '@/components/MessageCard.vue';
 import ArtworkCard from '@/components/ArtworkCard.vue';
-import muralImg from '@/assets/20221202.jpg';
-import art01 from '@/assets/fanart/01.png';
-import art02 from '@/assets/fanart/02.png';
-import art03 from '@/assets/fanart/03.jpg';
+import muralImg from '@/assets/20221220.jpg';
+import art01 from '@/assets/fanart/01-JesusAlberto.png';
+import art02 from '@/assets/fanart/02-MumeisCloak.png';
+import art03 from '@/assets/fanart/03-MABIN.png';
+import art04 from '@/assets/fanart/04-SyntaxeErrour.png';
+import art05 from '@/assets/fanart/05-Day.png';
+import art06 from '@/assets/fanart/06-AABA.png';
+import art07 from '@/assets/fanart/07-Elious.png';
+import art08 from '@/assets/fanart/08-scount.png';
+import art09 from '@/assets/fanart/09-MeguminsStaff.png';
 </script>
 
 <template>
@@ -61,9 +67,15 @@ export default {
       source: 'https://vtubertools.sfo3.digitaloceanspaces.com/tribute/mumei2023.json',
       cards: [],
       arts: [
-        { file: art01, artist: 'ArtistName1' },
-        { file: art02, artist: 'ArtistName2' },
-        { file: art03, artist: 'ArtistName3' },
+        { file: art01, artist: 'Jesus Alberto' },
+        { file: art02, artist: 'Mumei’s Cloak ' },
+        { file: art03, artist: 'MABIN' },
+        { file: art04, artist: 'Syntaxe Errour' },
+        { file: art05, artist: 'Đay' },
+        { file: art06, artist: 'AABABABBBABBAABBA' },
+        { file: art07, artist: 'Elious' },
+        { file: art08, artist: 'scount' },
+        { file: art09, artist: 'Megumin\'s Staff' },
       ],
     }
   },
