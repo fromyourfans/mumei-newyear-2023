@@ -26,7 +26,9 @@ import art10 from '@/assets/fanart/10-MoguMogu.png';
       <v-row no-gutters class="mb-8">
         <v-col sm="10" offset-sm="1">
           <div class="section-body mural-container">
-            <img :src="muralImg" class="mural-img">
+            <a :href="muralImg" target="_blank">
+              <img :src="muralImg" class="mural-img">
+            </a>
           </div>
         </v-col>
       </v-row>
