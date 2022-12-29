@@ -78,6 +78,8 @@ export default {
         { file: art08, artist: 'scount' },
         { file: art09, artist: 'Megumin\'s Staff' },
         { file: art10, artist: 'Mogu Mogu' },
+        { file: null, artist: null },
+        { file: null, artist: null },
       ],
     }
   },

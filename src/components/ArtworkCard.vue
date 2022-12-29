@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="card">
-    <div class="card-box">
+    <div class="card-box" v-if="info.file">
       <a :href="info.file" target="_blank">
         <img :src="info.file" alt="">
       </a>
