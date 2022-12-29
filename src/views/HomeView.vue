@@ -2,7 +2,7 @@
 import axios from 'axios';
 import MessageCard from '@/components/MessageCard.vue';
 import ArtworkCard from '@/components/ArtworkCard.vue';
-import muralImg from '@/assets/20221220.jpg';
+import muralImg from '@/assets/20221226.png';
 import art01 from '@/assets/fanart/01-JesusAlberto.png';
 import art02 from '@/assets/fanart/02-MumeisCloak.png';
 import art03 from '@/assets/fanart/03-MABIN.png';
@@ -12,6 +12,7 @@ import art06 from '@/assets/fanart/06-AABA.png';
 import art07 from '@/assets/fanart/07-Elious.png';
 import art08 from '@/assets/fanart/08-scount.png';
 import art09 from '@/assets/fanart/09-MeguminsStaff.png';
+import art10 from '@/assets/fanart/10-MoguMogu.png';
 </script>
 
 <template>
@@ -76,6 +77,7 @@ export default {
         { file: art07, artist: 'Elious' },
         { file: art08, artist: 'scount' },
         { file: art09, artist: 'Megumin\'s Staff' },
+        { file: art10, artist: 'Mogu Mogu' },
       ],
     }
   },
